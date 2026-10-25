@@ -1,0 +1,15 @@
+{
+  "name": "ubuntu-kasi-ecosystem",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace apps/web/ubuntupay-pwa run dev",
+    "dev:mobile": "npm --workspace apps/mobile/kasikoin-app run start",
+    "dev:server": "npm --workspace apps/backend run dev",
+    "build:web": "npm --workspace apps/web/ubuntupay-pwa run build"
+  }
+}
